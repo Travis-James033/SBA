@@ -13,20 +13,20 @@ header {
     justify-content: space-around;
 }
 
-ul {
+nav ul {
       display: flex;
       list-style-type: none;
 
 }
 
-ul li a {
+nav ul li a {
    padding:0 20px;
     color:black;
     text-decoration: none;
     display: inline-block;
 }
 
-li a::after {
+nav li a::after {
     content: "";
     height: 4px;
     width: 0;
@@ -36,7 +36,7 @@ li a::after {
 
 }
 
-li a:hover::after {
+nav li a:hover::after {
     width: 100%;
 }
 
@@ -52,9 +52,10 @@ li a:hover::after {
 .centered {
     position: absolute;
     top: 30%;
-    left: 8%;
+    left: 10%;
     right: 8%;
     font-size: 50px;
+    color:#F1F1F1;
 
 }
 
@@ -62,11 +63,30 @@ li a:hover::after {
 
     position: absolute;
     width: 180px;
-    height: 40px;
-    top: 50%;
+    height: 55px;
+    top: 45%;
     left: 8%;
     right: 8%;
-    font-size: 10px;
+    font-size: 13px;
+    border: 1px solid  #F1F1F1;
+    background: rgb(15, 61, 62, 0.6);
+    transition: .6s;
+    color: rgb(241, 241, 241);
+    cursor: pointer;
+
+}
+
+#contact:hover {
+
+    background: rgb(15, 61, 62, 1.0);
+    transform: scale(1.1);
+
+}
+
+#contact::before {
+
+    color:#F1F1F1;
+    opacity: 100%;
 
 }
 
@@ -104,7 +124,7 @@ li a:hover::after {
 
 }
 
-#new-cars {
+.new-cars {
     background:#F1F1F1;
     display:flex;
 justify-content: center;
@@ -134,15 +154,51 @@ justify-content: space-around;
 
 
 .card-body {
-    border: 1px solid black;
-    width: 300px;
+    width: 380px;
     margin-top: 100px;
+        box-shadow: 0px 0px 40px; color: #0F3D3E;
+        transition: .6s;
+        cursor: pointer;
+
+ }
+
+ .card-body:hover {
+
+    transform: scale(1.1);
  }
  
  .img-container img {
     max-width: 100%;
-    height: auto;
+    height: 300px;
+ }
+
+ .card-body h1, h3, p {
+    margin-left: 20px;
+    color: black;
  }
  
 
  
+ form {
+    Border: 1px solid black;
+    height: 500px;
+    width: 400px;
+    text-align: center;
+    margin-left: 300px;
+    margin-top: 200px;
+    background-color: #F1F1F1;
+    
+}
+input { height: 40px;
+    width: 200px;
+    background-color: rgb(241, 241, 241);
+    text-align: center;
+    color: black
+
+}
+
+button { height: 30px;
+    width: 200px;
+    background-color: #0F3D3E;
+
+}
